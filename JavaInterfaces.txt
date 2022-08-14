@@ -1,0 +1,20 @@
+				+-~-~-~-~-~-~-~-~+
+				|==>Interfaces<==|
+				+~-~-~-~-~-~-~-~-+
+
+Another way for classes to inherit is through interfaces.
+
+Both Abstract Classes and Interfaces are designed to use abstract methods to define behavior, but they rely on subclasses to implement that behavior. You can think of using abstract methods as creating a contract between the supertype and a subtype.
+
+With interfaces, the methods defined are implicitly public and abstract even when those keywords are not explicitly used.
+
+Interfaces can also have variables, which are implicitly public static final - meaning they are attached to the interface itself and are constants that cannot be reassigned.
+
+Below is a list of facts about interfaces:
+
+1) Interfaces cannot be instantiated
+2) They instead serve as contracts for methods that classes must 	implement.
+3) In order to inherit from interfaces, a class declares that it 	implements one or more interfaces.
+4) Methods declared on an interface are implicitly public and abstract.
+5) Interfaces can have variables, but they are implicitly public static 	final.
+6) Since Java 8, interfaces can also provide method implementations if 	the method is marked static or default.
