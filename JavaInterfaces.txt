@@ -12,9 +12,30 @@ Interfaces can also have variables, which are implicitly public static final - m
 
 Below is a list of facts about interfaces:
 
-1) Interfaces cannot be instantiated
-2) They instead serve as contracts for methods that classes must 	implement.
-3) In order to inherit from interfaces, a class declares that it 	implements one or more interfaces.
-4) Methods declared on an interface are implicitly public and abstract.
-5) Interfaces can have variables, but they are implicitly public static 	final.
-6) Since Java 8, interfaces can also provide method implementations if 	the method is marked static or default.
+1) Interfaces cannot be instantiated.
+2) They instead serve as contracts for methods that classes must implement.
+3) In order to inherit from interfaces, a class declares that it implements one or more interfaces.
+4) Methods declared on an interface are implicitly public and are abstract.
+5) Interfaces can have variables, but they are implicitly public static final.
+6) Since Java 8, interfaces can also provide method implementations if the method is marked static or default.
+
++------------------------------------+---------------------------------------+
+|	Abstract Class	                 | 	Interfaces							 |
++------------------------------------+---------------------------------------+
+|Subclasses use the extends Keyword  |Subclasses use the implements keyword  |
+|to inherit functionality	 		 |to inherit functionality				 |
++------------------------------------+---------------------------------------+
+|Subclasses may only extend one 	 |Subclasses may implement multiple 	 |
+|abstract class						 |interfaces							 |
++------------------------------------+---------------------------------------+
+|Can contain abstract and 			 |All methods are implicilty abstract	 |
+|non-abstract methods				 |										 |
++------------------------------------+---------------------------------------+
+|May contain methods which are 		 |All methods are implicitly public, and |
+|public, protected, package-private  |therefore cannot have other levels of  |
+|or private							 |access								 |
++------------------------------------+---------------------------------------+
+|May contain fields (variables) with |All fields (variables) are implicitly  |
+|different levels of access and other|public, static and final				 |
+|modifiers							 |										 |
++------------------------------------+---------------------------------------+
