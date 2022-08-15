@@ -39,3 +39,8 @@ Below is a list of facts about interfaces:
 |different levels of access and other|public, static and final				 |
 |modifiers							 |										 |
 +------------------------------------+---------------------------------------+
+
+
+~Jack
+
+..............................................................................
